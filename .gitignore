@@ -1,3 +1,5 @@
 .env
 secrets.py
 __pycache__/secrets.cpython-38.pyc
+.DS_Store
+__pycache__/secrets.cpython-39.pyc

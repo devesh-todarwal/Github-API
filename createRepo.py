@@ -1,7 +1,9 @@
+#!/usr/bin/env python3
 import requests
 from pprint import pprint
-from secrets import GITHUB_TOKEN
+from secrets import GITHUB_TOKEN, REPO_PATH, GITHUB_USER
 import argparse
+import os
 
 #Parsing arguments -> Name of the repository, Visibility of the repository (Private/Public)
 parser = argparse.ArgumentParser()
@@ -15,6 +17,8 @@ is_private = args.is_private
 
 #Creating the repo based on received arguments
 API_URL = "https://api.github.com"
+#REPO_PATH = <Insert Path To Store Repository Locally>
+#GITHUB_USER= <insert Github username>
 
 if is_private:
     payload = '{"name":"' + repo_name + '", "private": true}'
@@ -32,3 +36,15 @@ try:
 except requests.exceptions.RequestException as err:
     raise SystemExit(err)
 
+# Adding README to the Repo and creating a local clone + Linking local repo and remote repo.
+try:
+    os.chdir(REPO_PATH)
+    os.system("mkdir " + repo_name)
+    os.chdir(REPO_PATH + repo_name)
+    os.system("git init")
+    os.system("git remote add origin https://github.com/" + GITHUB_USER + "/" + repo_name + ".git")
+    os.system("git branch -M main")
+    os.system("echo '# " + repo_name + "' >> README.md")
+    os.system("git add . && git commit -m 'Initial Commit' && git push origin main")
+except FileExistsError as err:
+    raise SystemExit(err)
