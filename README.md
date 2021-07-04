@@ -1,5 +1,11 @@
 # Exploring Github API
+Developing various tools/apps using the Github API
 
+## Objective List
+* [x] Create a repostiory through command line
+* [ ] Profile fetch using command line
+* [ ] Overview generator application
+* [ ] ...
 ## 1. Create Repository Through Command Line 
 
 While creating a new repository there are multiple pitfalls for novice developers like problems with setting up remote connection, exporting an already existing repository to a newly created repository on Github.
