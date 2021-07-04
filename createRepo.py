@@ -17,8 +17,9 @@ is_private = args.is_private
 
 #Creating the repo based on received arguments
 API_URL = "https://api.github.com"
+#GITHUB_TOKEN = <Generate an authentication token through Github>
 #REPO_PATH = <Insert Path To Store Repository Locally>
-#GITHUB_USER= <insert Github username>
+#GITHUB_USER= <Insert Github username>
 
 if is_private:
     payload = '{"name":"' + repo_name + '", "private": true}'
