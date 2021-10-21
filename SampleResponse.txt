@@ -1,0 +1,39 @@
+{"comments": 0,
+ "description": null,
+ "files": {"code.py": {"content": "print('some code')",
+                       "filename": "code.py",
+                       "language": "Python",
+                       "raw_url": "https://github.com/devesh-todarwal/Github-API/new/main/createRepo.txt",
+                       "size": 18,
+                       "truncated": null,
+                       "type": "application/x-python"}},
+ "forks": [],
+ "html_url": "https://gist.github.com/383c6b450f892e169074a642a372e459",
+ "id": "383c6b450f892e169074a642a372e459",
+ "node_id": "MDQ6R2lzdDM4M2M2YjQ1MGY4OTJlMTY5MDc0YTY0MmEzNzJlNDU5",
+ "public": true,
+ "url": "https://api.github.com/gists/383c6b450f892e169074a642a372e459"
+}
+
+//Response #2
+
+Repository has 31 clones out of which 23 are unique.
+Repository has 1672 views out of which 297 are unique.
+{'count': 1672,
+ 'uniques': 297,
+ 'views': [View(uniques=6, timestamp=2020-04-28 00:00:00, count=29),
+           View(uniques=30, timestamp=2020-04-29 00:00:00, count=141),
+           View(uniques=37, timestamp=2020-04-30 00:00:00, count=184),
+           View(uniques=25, timestamp=2020-05-01 00:00:00, count=93),
+           View(uniques=24, timestamp=2020-05-02 00:00:00, count=131),
+           View(uniques=20, timestamp=2020-05-03 00:00:00, count=41),
+           View(uniques=26, timestamp=2020-05-04 00:00:00, count=121),
+           View(uniques=41, timestamp=2020-05-05 00:00:00, count=250),
+           View(uniques=47, timestamp=2020-05-06 00:00:00, count=184),
+           View(uniques=33, timestamp=2020-05-07 00:00:00, count=216),
+           View(uniques=15, timestamp=2020-05-08 00:00:00, count=48),
+           View(uniques=20, timestamp=2020-05-09 00:00:00, count=71),
+           View(uniques=22, timestamp=2020-05-10 00:00:00, count=51),
+           View(uniques=7, timestamp=2020-05-11 00:00:00, count=16),
+           View(uniques=14, timestamp=2020-05-12 00:00:00, count=96)]}
+Repository had most views on 2020-05-05 00:00:00 with 250 views
